@@ -163,7 +163,7 @@ BASE_URL=https://your-server.example.com npm run build
 
 Then copy the contents of the `public/` folder to your static hosting / CDN.
 
-There are also a couple settings you should configure on the server.
+There are also a couple of settings you should configure on the server.
 
 To help out users, you can make the Shields server redirect the server root.
 Set the `REDIRECT_URI` environment variable:

@@ -71,6 +71,8 @@ public:
 
   requireCloudflare: 'REQUIRE_CLOUDFLARE'
 
+  base_url_path: 'BASE_URL_PATH'
+
 private:
   azure_devops_token: 'AZURE_DEVOPS_TOKEN'
   bitbucket_username: 'BITBUCKET_USER'

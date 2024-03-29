@@ -33,4 +33,5 @@ public:
   requestTimeoutSeconds: 120
   requestTimeoutMaxAgeSeconds: 30
   requireCloudflare: false
+  base_url_path: '/'
 private: {}

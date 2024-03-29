@@ -159,6 +159,7 @@ const publicConfigSchema = Joi.object({
     ),
   ),
   requireCloudflare: Joi.boolean().required(),
+  base_url_path: Joi.string(),
 }).required()
 
 const privateConfigSchema = Joi.object({
@@ -308,13 +309,14 @@ class Server {
     const {
       bind: { address, port },
       ssl: { isSecure },
+      base_url_path,
     } = this.config.public
 
     return url.format({
       protocol: isSecure ? 'https' : 'http',
       hostname: address,
       port,
-      pathname: '/',
+      pathname: base_url_path,
     })
   }
 
