@@ -7,7 +7,7 @@ const config = {
   title: 'Shields.io',
   tagline: 'Concise, consistent, and legible badges',
   url: 'https://shields.io',
-  baseUrl: '/',
+  baseUrl: '/shields-dev',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
