@@ -1,0 +1,22 @@
+stages:
+  - build
+  - deploy
+
+
+build-job:
+  stage: build
+  image: alpine
+
+  environment:
+    SRC_DIR: .
+
+  script:
+    - docker build -t shields .
+  artifacts:
+    paths:
+      - "build/"
+
+rebase-master:
+  script:
+    - git rebase origin/master
+    - git push -f {env.branch}
